@@ -7,6 +7,9 @@ import com.dnd.game.DND;
 public class DesktopLauncher {
 	public static void main (String[] arg) {
 		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
+		config.width = DND.WIDTH;
+		config.height = DND.HEIGHT;
+		config.title = DND.TITLE;
 		new LwjglApplication(new DND(), config);
 	}
 }
